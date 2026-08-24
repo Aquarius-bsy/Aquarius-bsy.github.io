@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>aquar — projects</title>
+    <meta name="description" content="aquar 的项目列表。" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="site-header">
+      <div class="wrap topbar">
+        <a class="brand" href="index.html"><span class="hash">$</span> aquar</a>
+        <nav class="crumb-nav" data-nav aria-label="站点">
+          <a href="index.html">~/</a>
+          <span class="sep">/</span>
+          <a href="projects.html">projects</a>
+          <span class="sep">/</span>
+          <a href="blog/index.html">blog</a>
+          <span class="sep">/</span>
+          <a href="resume.html">resume</a>
+        </nav>
+        <div class="header-links">
+          <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">github</a>
+          <a href="mailto:you@example.com">email</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="wrap">
+        <p class="kicker">ls -l</p>
+        <h1 class="cmd">
+          <span class="prompt">$</span>
+          <span>ls projects</span>
+        </h1>
+        <p class="lede">
+          占位项目，对应你现在在学的方向。把标题、说明和链接改成真实仓库即可。
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <span class="kicker">coursework</span>
+            <h3>AI Intro Labs</h3>
+            <p>
+              人工智能导论实验：定位、规划、PD 控制，以及更早的分类 / 强化学习练习。目标是把「能交作业」变成「能讲清楚」。
+            </p>
+            <div class="tags">
+              <span class="tag">python</span>
+              <span class="tag">numpy</span>
+              <span class="tag">control</span>
+            </div>
+            <p>
+              <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">repository</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="kicker">research notes</span>
+            <h3>SAE to Alignment</h3>
+            <p>
+              围绕稀疏自编码器的阅读与设想：中间层语义解释、概念混杂，以及 Meta-SAE / Transcoder 是否能帮上对齐。
+            </p>
+            <div class="tags">
+              <span class="tag">mechanistic interp</span>
+              <span class="tag">sae</span>
+              <span class="tag">alignment</span>
+            </div>
+            <p>
+              <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">notes</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="kicker">site</span>
+            <h3>my_page</h3>
+            <p>
+              当前这个个人主页。纯静态、终端风、可打印简历。用来练前端结构，也当成对外的一张名片。
+            </p>
+            <div class="tags">
+              <span class="tag">html</span>
+              <span class="tag">css</span>
+              <span class="tag">js</span>
+            </div>
+            <p>
+              <a href="index.html">live</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap statusline">
+        <span>aquar@page <span class="muted">|</span> ~/projects <span class="muted">|</span> © <span data-year>2026</span></span>
+        <span>
+          <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">github</a>
+          ·
+          <a href="mailto:you@example.com">email</a>
+        </span>
+      </div>
+    </footer>
+
+    <script src="js/posts.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

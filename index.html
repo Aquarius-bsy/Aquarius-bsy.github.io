@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>aquar — home</title>
+    <meta name="description" content="aquar 的个人主页：介绍、项目、博客与简历。" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="site-header">
+      <div class="wrap topbar">
+        <a class="brand" href="index.html"><span class="hash">$</span> aquar</a>
+        <nav class="crumb-nav" data-nav aria-label="站点">
+          <a href="index.html">~/</a>
+          <span class="sep">/</span>
+          <a href="projects.html">projects</a>
+          <span class="sep">/</span>
+          <a href="blog/index.html">blog</a>
+          <span class="sep">/</span>
+          <a href="resume.html">resume</a>
+        </nav>
+        <div class="header-links">
+          <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">github</a>
+          <a href="mailto:you@example.com">email</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="wrap">
+        <section class="term" aria-labelledby="whoami">
+          <div class="term-title">
+            <span class="term-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+            aquar@page:~
+          </div>
+          <div class="term-body">
+            <p class="cmd" id="whoami">
+              <span class="prompt">$</span>
+              <span>whoami</span>
+            </p>
+            <h1 class="hero-name">aquar</h1>
+            <p class="hero-line" aria-label="在学人工智能，关心模型如何被理解、被对齐。">
+              <span
+                data-typewriter="在学人工智能，关心模型如何被理解、被对齐。"
+              ></span><span class="caret" aria-hidden="true">&nbsp;</span>
+            </p>
+            <p class="lede">
+              这是从零搭起来的个人主页。第一版只用 HTML / CSS / JS，方便改内容和学前端；之后可以再包一层 Vite。
+            </p>
+            <div class="meta-row">
+              <span class="pill"><span class="dot"></span> status: studying AI</span>
+              <span>cwd: ~/home</span>
+              <span>locale: zh-CN</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="projects-cmd">
+          <div class="section-head">
+            <h2 class="cmd" id="projects-cmd">
+              <span class="prompt">$</span>
+              <span>ls projects</span>
+            </h2>
+            <a href="projects.html">cd ./projects</a>
+          </div>
+          <div class="grid">
+            <a class="card" href="projects.html">
+              <span class="kicker">featured</span>
+              <h3>AI Intro Labs</h3>
+              <p>定位、规划与控制等课程实验。把课堂作业整理成能讲清楚的项目。</p>
+              <div class="tags">
+                <span class="tag">python</span>
+                <span class="tag">ml</span>
+                <span class="tag">robotics</span>
+              </div>
+            </a>
+            <a class="card" href="projects.html">
+              <span class="kicker">notes</span>
+              <h3>SAE × Alignment</h3>
+              <p>稀疏自编码器与对齐方向的阅读笔记：中间层语义、Meta-SAE、Transcoder。</p>
+              <div class="tags">
+                <span class="tag">interpretability</span>
+                <span class="tag">alignment</span>
+              </div>
+            </a>
+            <a class="card" href="projects.html">
+              <span class="kicker">this site</span>
+              <h3>my_page</h3>
+              <p>你正在看的站点。终端风静态页，零构建，后续可升级到 Vite。</p>
+              <div class="tags">
+                <span class="tag">html</span>
+                <span class="tag">css</span>
+                <span class="tag">js</span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="blog-cmd">
+          <div class="section-head">
+            <h2 class="cmd" id="blog-cmd">
+              <span class="prompt">$</span>
+              <span>tail -n 2 blog/</span>
+            </h2>
+            <a href="blog/index.html">cd ./blog</a>
+          </div>
+          <div class="post-list" data-post-list data-limit="2" data-base="blog/"></div>
+        </section>
+
+        <section class="section" aria-labelledby="links-cmd">
+          <div class="section-head">
+            <h2 class="cmd" id="links-cmd">
+              <span class="prompt">$</span>
+              <span>cat links.txt</span>
+            </h2>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <h3>github</h3>
+              <p>代码与实验仓库。</p>
+              <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">github.com/Aquarius-bsy</a>
+            </article>
+            <article class="card">
+              <h3>email</h3>
+              <p>欢迎交流课程、项目或对齐相关的阅读。</p>
+              <a href="mailto:you@example.com">you@example.com</a>
+            </article>
+            <article class="card">
+              <h3>resume</h3>
+              <p>教育、技能与项目经历；页面支持打印成 PDF。</p>
+              <a href="resume.html">./resume.html</a>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap statusline">
+        <span>aquar@page <span class="muted">|</span> utf-8 <span class="muted">|</span> © <span data-year>2026</span></span>
+        <span>
+          <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">github</a>
+          ·
+          <a href="mailto:you@example.com">email</a>
+          ·
+          <a href="resume.html">resume</a>
+        </span>
+      </div>
+    </footer>
+
+    <script src="js/posts.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>aquar — resume</title>
+    <meta name="description" content="aquar 的简历：教育、技能与项目。" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+  <body class="page-resume">
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="site-header">
+      <div class="wrap topbar">
+        <a class="brand" href="index.html"><span class="hash">$</span> aquar</a>
+        <nav class="crumb-nav" data-nav aria-label="站点">
+          <a href="index.html">~/</a>
+          <span class="sep">/</span>
+          <a href="projects.html">projects</a>
+          <span class="sep">/</span>
+          <a href="blog/index.html">blog</a>
+          <span class="sep">/</span>
+          <a href="resume.html">resume</a>
+        </nav>
+        <div class="header-links">
+          <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">github</a>
+          <a href="mailto:you@example.com">email</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="wrap">
+        <p class="kicker no-print">cat</p>
+        <h1 class="cmd">
+          <span class="prompt">$</span>
+          <span>cat resume.md</span>
+        </h1>
+        <p class="lede no-print">
+          屏幕阅读用深色终端风；用浏览器「打印 → 另存为 PDF」会切成浅色排版。把下面的学校、技能和时间改成你的真实信息。
+        </p>
+
+        <div class="term">
+          <div class="term-title no-print">
+            <span class="term-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+            resume.md
+          </div>
+          <div class="term-body resume">
+            <section class="resume-block">
+              <h2># contact</h2>
+              <dl>
+                <dt>name</dt>
+                <dd>aquar</dd>
+                <dt>email</dt>
+                <dd><a href="mailto:you@example.com">you@example.com</a></dd>
+                <dt>github</dt>
+                <dd><a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">github.com/Aquarius-bsy</a></dd>
+                <dt>site</dt>
+                <dd><a href="https://aquarius-bsy.github.io/">aquarius-bsy.github.io</a></dd>
+              </dl>
+            </section>
+
+            <section class="resume-block">
+              <h2># education</h2>
+              <dl>
+                <dt>2024 — now</dt>
+                <dd>
+                  你的学校 / 专业（占位）
+                  <div class="muted">相关课程：人工智能导论、程序设计、线性代数</div>
+                </dd>
+              </dl>
+            </section>
+
+            <section class="resume-block">
+              <h2># skills</h2>
+              <dl>
+                <dt>languages</dt>
+                <dd>Python, C/C++, JavaScript, HTML/CSS</dd>
+                <dt>focus</dt>
+                <dd>机器学习基础、可解释性 / Alignment 阅读、把想法做成能打开的页面</dd>
+                <dt>tools</dt>
+                <dd>Git, VS Code / Cursor, Linux 常用命令</dd>
+              </dl>
+            </section>
+
+            <section class="resume-block">
+              <h2># projects</h2>
+              <ul>
+                <li>
+                  <strong>AI Intro Labs</strong> — 定位、规划与控制等实验，练习把算法接到可运行的仿真上。
+                </li>
+                <li>
+                  <strong>SAE to Alignment</strong> — 稀疏自编码器与对齐方向的笔记，关注中间层语义是否可解释。
+                </li>
+                <li>
+                  <strong>my_page</strong> — 个人主页：介绍、项目、博客、可打印简历。
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap statusline">
+        <span>aquar@page <span class="muted">|</span> ~/resume.md <span class="muted">|</span> © <span data-year>2026</span></span>
+        <span class="no-print">提示：Ctrl+P 可导出 PDF</span>
+      </div>
+    </footer>
+
+    <script src="js/posts.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

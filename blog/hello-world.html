@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello, world — aquar</title>
+    <meta
+      name="description"
+      content="为什么要搭个人主页、第一版选择纯 HTML/CSS/JS，以及接下来打算写些什么。"
+    />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="site-header">
+      <div class="wrap topbar">
+        <a class="brand" href="../index.html"><span class="hash">$</span> aquar</a>
+        <nav class="crumb-nav" data-nav aria-label="站点">
+          <a href="../index.html">~/</a>
+          <span class="sep">/</span>
+          <a href="../projects.html">projects</a>
+          <span class="sep">/</span>
+          <a href="index.html">blog</a>
+          <span class="sep">/</span>
+          <a href="../resume.html">resume</a>
+        </nav>
+        <div class="header-links">
+          <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">github</a>
+          <a href="mailto:you@example.com">email</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="wrap">
+        <article class="article">
+          <header>
+            <p class="kicker">~/blog/hello-world.html</p>
+            <h1>Hello, world — 从这一页开始</h1>
+            <p class="byline">
+              <time datetime="2026-08-24">2026-08-24</time>
+              · aquar
+            </p>
+          </header>
+
+          <p>
+            个人主页不一定要一开始就很宏大。这一版的目标很具体：有一个能打开的地址，能说清我是谁、在做什么，并且改起来不劝退。
+          </p>
+
+          <h2>为什么先用三件套</h2>
+          <p>
+            HTML 管结构，CSS 管外观，JS 只处理导航高亮、文章列表和一行打字机效果。没有打包器，也没有框架生命周期。本地用 Python 起一个静态服务器就能预览。
+          </p>
+          <p>目录也按以后升级来分：</p>
+          <ul>
+            <li><code>css/</code> 颜色和组件分开，换主题色只动 <code>tokens.css</code></li>
+            <li><code>js/posts.js</code> 集中放文章元数据</li>
+            <li>页面是普通 HTML，之后用 Vite 接入时不必重写内容</li>
+          </ul>
+
+          <h2>接下来可以写什么</h2>
+          <p>适合这个站点的内容，大概是「做过、读过、想清楚了一点」的记录，例如：</p>
+          <ol>
+            <li>一门课里真正卡住又想明白的地方</li>
+            <li>一个小项目为什么这样拆文件</li>
+            <li>读 Alignment / 可解释性论文时的疑问，而不是复述摘要</li>
+          </ol>
+
+          <h2>加一篇新文章</h2>
+          <p>复制这个文件，改标题和正文，然后在 <code>js/posts.js</code> 里加一条：</p>
+          <pre><code>{
+  id: "another-note",
+  href: "another-note.html",
+  title: "另一篇笔记",
+  date: "2026-09-01",
+  summary: "一句话摘要，会出现在首页和博客列表里。"
+}</code></pre>
+          <p>
+            列表页和首页会自动读到它。不必改构建配置——因为现在还没有构建。
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap statusline">
+        <span>aquar@page <span class="muted">|</span> ~/blog/hello-world.html</span>
+        <a href="index.html">back to ls</a>
+      </div>
+    </footer>
+
+    <script src="../js/posts.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

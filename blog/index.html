@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>aquar — blog</title>
+    <meta name="description" content="aquar 的博客与学习笔记。" />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="site-header">
+      <div class="wrap topbar">
+        <a class="brand" href="../index.html"><span class="hash">$</span> aquar</a>
+        <nav class="crumb-nav" data-nav aria-label="站点">
+          <a href="../index.html">~/</a>
+          <span class="sep">/</span>
+          <a href="../projects.html">projects</a>
+          <span class="sep">/</span>
+          <a href="index.html">blog</a>
+          <span class="sep">/</span>
+          <a href="../resume.html">resume</a>
+        </nav>
+        <div class="header-links">
+          <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">github</a>
+          <a href="mailto:you@example.com">email</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="wrap">
+        <p class="kicker">blog/</p>
+        <h1 class="cmd">
+          <span class="prompt">$</span>
+          <span>ls blog</span>
+        </h1>
+        <p class="lede">
+          文章列表来自 <code>js/posts.js</code>。新写一篇时：复制一篇 HTML，再在那个文件里加一条记录。
+        </p>
+        <div class="post-list" data-post-list></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap statusline">
+        <span>aquar@page <span class="muted">|</span> ~/blog <span class="muted">|</span> © <span data-year>2026</span></span>
+        <span>
+          <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">github</a>
+          ·
+          <a href="mailto:you@example.com">email</a>
+        </span>
+      </div>
+    </footer>
+
+    <script src="../js/posts.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
