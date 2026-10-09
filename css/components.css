@@ -203,6 +203,10 @@
   gap: var(--space-4);
 }
 
+.connect-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -516,7 +520,7 @@ a.card:hover {
 .brand {
   color: var(--fg);
   font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: 1.12rem;
   letter-spacing: 0.01em;
 }
 
@@ -604,7 +608,7 @@ a.card:hover {
 .hero-name {
   margin: 0 0 var(--space-2);
   font-family: var(--font-display);
-  font-size: clamp(3.4rem, 8vw, 6rem);
+  font-size: clamp(2.6rem, 6vw, 4.7rem);
   font-weight: 400;
   letter-spacing: -0.06em;
   line-height: 1;
@@ -869,6 +873,10 @@ a.card:hover,
 }
 
 @media (max-width: 720px) {
+  .connect-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     gap: var(--space-6);
