@@ -21,6 +21,7 @@ python -m http.server 5173
 | 路径 | 作用 |
 | --- | --- |
 | `index.html` | 首页：介绍、精选项目、最近文章、链接 |
+| `research.html` | 研究方向与论文列表 |
 | `projects.html` | 项目列表 |
 | `resume.html` | 简历；可用浏览器打印成 PDF |
 | `blog/` | 文章；索引页从 `js/posts.js` 渲染 |
@@ -29,6 +30,7 @@ python -m http.server 5173
 | `css/components.css` | 导航、卡片、文章、简历块 |
 | `js/main.js` | 当前页高亮、年份、打字机 |
 | `js/posts.js` | 文章标题、日期、摘要 |
+| `js/publications.js` | 论文条目；新论文加在数组最前面 |
 
 HTML 用 `header` / `nav` / `main` / `section` / `footer`，方便读屏和搜索引擎理解哪一块是导航、哪一块是正文。
 
@@ -37,7 +39,6 @@ HTML 用 `header` / `nav` / `main` / `section` / `footer`，方便读屏和搜�
 全局搜索这些占位符并替换：
 
 - `aquar` — 名字 / 站点名
-- `you@example.com` — 邮箱
 - 首页 `data-typewriter="..."` — 那句自我介绍（打字机文案）
 - `projects.html` 和首页项目卡片 — 项目名、说明、标签、链接
 - `resume.html` — 学校、技能、经历
@@ -58,6 +59,10 @@ HTML 用 `header` / `nav` / `main` / `section` / `footer`，方便读屏和搜�
   summary: "一句话摘要"
 }
 ```
+
+## 加一篇论文
+
+打开 `js/publications.js`，在 `SITE_PUBLICATIONS` 数组最前面加入一条记录。论文页会自动显示年份、类型、作者、场所、摘要和链接；没有论文时会显示一个干净的空状态。
 
 首页用 `data-limit` 只显示最近几篇；博客索引页不设 limit，会列出全部。
 

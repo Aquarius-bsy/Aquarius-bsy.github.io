@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>aquar — research</title>
+    <meta name="description" content="aquar 的研究方向、论文与阅读笔记。" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="site-header">
+      <div class="wrap topbar">
+        <a class="brand" href="index.html"><span class="hash">$</span> aquar</a>
+        <nav class="crumb-nav" data-nav aria-label="站点">
+          <a href="index.html">~/</a><span class="sep">/</span>
+          <a href="research.html">research</a><span class="sep">/</span>
+          <a href="projects.html">projects</a><span class="sep">/</span>
+          <a href="blog/index.html">blog</a><span class="sep">/</span>
+          <a href="resume.html">resume</a>
+        </nav>
+        <div class="header-links">
+          <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">github</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="wrap">
+        <p class="kicker">research log</p>
+        <h1 class="cmd"><span class="prompt">$</span><span>cat research.md</span></h1>
+        <p class="lede article-lede">这里会逐渐收录论文、预印本、实验记录和阅读笔记。现在内容还很少，但页面结构已经为之后的积累准备好了。</p>
+
+        <section class="section research-block" aria-labelledby="focus-title">
+          <div class="section-head"><h2 id="focus-title"># focus</h2></div>
+          <div class="focus-grid">
+            <article class="card"><span class="kicker">01</span><h3>Interpretability</h3><p>探索模型内部表征、特征和可解释的中间过程。</p></article>
+            <article class="card"><span class="kicker">02</span><h3>Alignment</h3><p>关注模型行为、目标与人类意图之间的关系。</p></article>
+            <article class="card"><span class="kicker">03</span><h3>Reproducible work</h3><p>让想法可以被运行、检查和继续迭代，而不只停留在笔记里。</p></article>
+          </div>
+        </section>
+
+        <section class="section research-block" aria-labelledby="publications-title">
+          <div class="section-head"><h2 class="cmd" id="publications-title"><span class="prompt">$</span><span>cat publications.json</span></h2></div>
+          <div class="publication-list" data-publication-list></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer"><div class="wrap statusline"><span>aquar@page <span class="muted">|</span> ~/research <span class="muted">|</span> © <span data-year>2026</span></span><span><a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">github</a></span></div></footer>
+    <script src="js/publications.js"></script>
+    <script src="js/posts.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

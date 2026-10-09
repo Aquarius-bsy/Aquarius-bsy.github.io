@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>aquar — home</title>
-    <meta name="description" content="aquar 的个人主页：介绍、项目、博客与简历。" />
+    <title>aquar — research &amp; notes</title>
+    <meta name="description" content="aquar 的个人主页：研究、项目、笔记与简历。" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,6 +24,8 @@
         <nav class="crumb-nav" data-nav aria-label="站点">
           <a href="index.html">~/</a>
           <span class="sep">/</span>
+          <a href="research.html">research</a>
+          <span class="sep">/</span>
           <a href="projects.html">projects</a>
           <span class="sep">/</span>
           <a href="blog/index.html">blog</a>
@@ -32,7 +34,6 @@
         </nav>
         <div class="header-links">
           <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">github</a>
-          <a href="mailto:you@example.com">email</a>
         </div>
       </div>
     </header>
@@ -56,13 +57,31 @@
               ></span><span class="caret" aria-hidden="true">&nbsp;</span>
             </p>
             <p class="lede">
-              这是从零搭起来的个人主页。第一版只用 HTML / CSS / JS，方便改内容和学前端；之后可以再包一层 Vite。
+              这里记录我的研究、项目和正在形成的想法。内容会慢慢长出来：论文、实验、阅读笔记和一些还没完成的尝试，都会放在这里。
             </p>
             <div class="meta-row">
               <span class="pill"><span class="dot"></span> status: studying AI</span>
               <span>cwd: ~/home</span>
               <span>locale: zh-CN</span>
             </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="research-cmd">
+          <div class="section-head">
+            <h2 class="cmd" id="research-cmd">
+              <span class="prompt">$</span>
+              <span>ls research/</span>
+            </h2>
+            <a href="research.html">cd ./research</a>
+          </div>
+          <div class="research-intro">
+            <div>
+              <span class="kicker">currently exploring</span>
+              <h3>理解模型，也理解自己正在做什么</h3>
+              <p>关注可解释性、Alignment，以及把一个研究问题变成可复现的实验。</p>
+            </div>
+            <a class="button-link" href="research.html">view publications →</a>
           </div>
         </section>
 
@@ -132,9 +151,9 @@
               <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">github.com/Aquarius-bsy</a>
             </article>
             <article class="card">
-              <h3>email</h3>
-              <p>欢迎交流课程、项目或对齐相关的阅读。</p>
-              <a href="mailto:you@example.com">you@example.com</a>
+              <h3>contact</h3>
+              <p>欢迎通过 GitHub 交流研究、项目或阅读相关内容。</p>
+              <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">GitHub profile ↗</a>
             </article>
             <article class="card">
               <h3>resume</h3>
@@ -151,8 +170,6 @@
         <span>aquar@page <span class="muted">|</span> utf-8 <span class="muted">|</span> © <span data-year>2026</span></span>
         <span>
           <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">github</a>
-          ·
-          <a href="mailto:you@example.com">email</a>
           ·
           <a href="resume.html">resume</a>
         </span>
