@@ -27,7 +27,8 @@
           <a href="resume.html">About</a>
         </nav>
         <div class="header-links">
-          <a href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">GitHub</a>
+          <a class="header-button" href="mailto:2500013113@stu.pku.edu.com">Email</a>
+          <a class="header-button" href="https://github.com/Aquarius-bsy" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </header>
@@ -70,36 +71,52 @@
             <h2 id="projects-title">Selected Work</h2>
             <a href="projects.html">All projects →</a>
           </div>
-          <div class="grid">
-            <a class="card" href="projects.html">
-              <span class="kicker">featured</span>
-              <h3>AI Intro Labs</h3>
-              <p>定位、规划与控制等课程实验。把课堂作业整理成能讲清楚的项目。</p>
-              <div class="tags">
-                <span class="tag">python</span>
-                <span class="tag">ml</span>
-                <span class="tag">robotics</span>
-              </div>
-            </a>
-            <a class="card" href="research.html">
-              <span class="kicker">selected paper · ICML 2026</span>
-              <h3>Stable Value Alignment</h3>
-              <p>研究如何通过独立价值模块，让大语言模型在不同情境下更稳定地表达价值。第三作者。</p>
-              <div class="tags">
-                <span class="tag">LLM</span>
-                <span class="tag">AI alignment</span>
-              </div>
-            </a>
-            <a class="card" href="projects.html">
-              <span class="kicker">this site</span>
-              <h3>my_page</h3>
-              <p>这个慢慢搭起来的个人空间，记录研究、项目和日常学习的轨迹。</p>
-              <div class="tags">
-                <span class="tag">html</span>
-                <span class="tag">css</span>
-                <span class="tag">js</span>
-              </div>
-            </a>
+          <div class="work-group" aria-labelledby="publications-heading">
+            <h3 class="work-category" id="publications-heading">Publications</h3>
+            <div class="grid">
+              <a class="card" href="https://proceedings.mlr.press/v306/chen26dw.html" rel="noopener noreferrer">
+                <span class="kicker">ICML 2026 · Spotlight · Third Author</span>
+                <h4>Toward Stable Value Alignment: Introducing Independent Modules for Consistent Value Guidance</h4>
+                <p>研究如何通过独立价值模块，让大语言模型在不同情境下更稳定地表达价值。</p>
+                <div class="tags"><span class="tag">LLM</span><span class="tag">AI alignment</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="work-group" aria-labelledby="projects-heading">
+            <h3 class="work-category" id="projects-heading">Projects</h3>
+            <div class="grid">
+              <a class="card" href="projects.html">
+                <span class="kicker">Coursework</span>
+                <h4>AI Intro Labs</h4>
+                <p>定位、规划与控制等课程实验。把课堂作业整理成能讲清楚的项目。</p>
+                <div class="tags"><span class="tag">python</span><span class="tag">ml</span><span class="tag">robotics</span></div>
+              </a>
+              <a class="card" href="projects.html">
+                <span class="kicker">Personal Website</span>
+                <h4>my_page</h4>
+                <p>记录研究、项目和日常学习的个人空间，并持续整理更新。</p>
+                <div class="tags"><span class="tag">html</span><span class="tag">css</span><span class="tag">js</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="work-group" aria-labelledby="research-heading">
+            <h3 class="work-category" id="research-heading">Research</h3>
+            <div class="grid">
+              <a class="card" href="research.html">
+                <span class="kicker">AI Alignment</span>
+                <h4>Alignment Methods</h4>
+                <p>自主调研与设计大语言模型对齐方法，并独立推进相关研究项目与论文。</p>
+                <div class="tags"><span class="tag">LLM</span><span class="tag">alignment</span><span class="tag">method design</span></div>
+              </a>
+              <a class="card" href="projects.html">
+                <span class="kicker">Research Notes</span>
+                <h4>SAE to Alignment</h4>
+                <p>围绕稀疏自编码器与机制可解释性的阅读和研究设想。</p>
+                <div class="tags"><span class="tag">mechanistic interp</span><span class="tag">SAE</span></div>
+              </a>
+            </div>
           </div>
         </section>
 
@@ -115,7 +132,7 @@
           <div class="section-head">
             <h2 id="links-title">Connect</h2>
           </div>
-          <div class="grid connect-grid">
+          <div class="grid">
             <article class="card">
               <h3>Projects</h3>
               <p>一些实验、练习与正在整理的研究项目。</p>
@@ -130,11 +147,6 @@
               <h3>About</h3>
               <p>教育经历、研究工作与校园活动。</p>
               <a href="resume.html">Learn more →</a>
-            </article>
-            <article class="card">
-              <h3>Email</h3>
-              <p>欢迎就研究、合作或学术交流与我联系。</p>
-              <a href="mailto:2500013113@stu.pku.edu.com">2500013113@stu.pku.edu.com</a>
             </article>
           </div>
         </section>
